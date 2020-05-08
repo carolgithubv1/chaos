@@ -1,3 +1,7 @@
+# iterated determinstic multiple affine transformation based random processing 
+# currently #affine=1
+
+
 # rule 
 import numpy as np 
 import random 
