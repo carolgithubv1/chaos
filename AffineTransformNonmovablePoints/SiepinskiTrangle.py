@@ -39,7 +39,7 @@ def rule2(A1, A2, A3, A0, A_post, B_post, C1, C2, C3):
 	# A_post(x_a_post, y_a_post) locates on x axis, B(x_b_post, y_b_post) locates on y axis 
 	[x_a_post, y_a_post] = A_post
 	[x_b_post, y_b_post] = B_post
-	C = np.array[[x_a_post x_b_post], [y_a_post, y_b_post]] + np.array[x_coor_shift, y_coor_shift
+	C = np.array[[x_a_post x_b_post], [y_a_post, y_b_post]] + np.array[x_coor_shift, y_coor_shift]
 
 	p = 1/3
 	# k=1 output 
