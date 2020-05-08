@@ -75,20 +75,22 @@ A3 = [x_3, y_3] = [3/2, 3]
 
 # record all new location of (x,y)
 # --------------------------------------------------
-x,y = rule1(A1, A2, A3, A0)
-[x,y] 
-np.concatenate((result, [x,y]))
-
-
-# plot
-# --------------------------------------------------
-x_new = result[:,[0]]
-y_new = result[:,[1]]
-plt.title("Siepinski Triangle") 
-plt.xlabel("x axis ") 
-plt.ylabel("y axis p") 
-plt.plot(x_new,y_new) 
-plt.show()
+count = 100
+for ii in count
+	x,y = rule1(A1, A2, A3, A0)
+	# append a new (x,y) to result which is the numpy array created
+	np.concatenate((result, [x,y]))
+	
+	if (ii%count==0):
+	# plot
+	# --------------------------------------------------
+	x_new = result[:,[0]]
+	y_new = result[:,[1]]
+	plt.title("Siepinski Triangle") 
+	plt.xlabel("x axis ") 
+	plt.ylabel("y axis p") 
+	plt.plot(x_new,y_new) 
+	plt.show()
 
 
 
